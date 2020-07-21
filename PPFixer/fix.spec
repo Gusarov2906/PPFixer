@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['fix.py'],
-             pathex=['E:\\PROJECTS\\PythonProjects\\PPFixer\\PPFixer'],
+             pathex=['E:\\PROJECTS\\Pythonprojects\\PPFixer\\PPFixer'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -30,4 +30,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=True , icon='exe.ico')
+          console=True )

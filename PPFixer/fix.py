@@ -43,8 +43,11 @@ try:
 				tmp = line[line.find('"')+1:line.rfind('"')]
 				tmp = tmp.replace(',','.')
 				tmp = tmp.replace('"','')
+				print('Старая строка: '+ line[line.find('"'):line.rfind('"')+1])
 				line = line.replace(line[line.find('"'):line.rfind('"')+1],tmp)
 				print(f"Замена в {i} строке прошла успешно")
+				print('Новая строка: '+ tmp)
+				print()
 			#write to file
 			f.write(line)
 	print("Завершено без ошибок!")
